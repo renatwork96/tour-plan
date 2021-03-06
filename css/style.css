@@ -381,6 +381,7 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  outline: none;
 }
 
 .navbar__search {
@@ -440,6 +441,7 @@ template {
   font-style: 12px;
   line-height: 15px;
   color: #333333;
+  outline: none;
 }
 
 .search__button {
@@ -589,6 +591,10 @@ template {
   line-height: 18px;
 }
 
+.raiting-counter__small-text {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 930px;
@@ -657,8 +663,8 @@ template {
     background-color: #333333;
   }
   .stars {
-    -ms-flex-preferred-size: 75px;
-        flex-basis: 75px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
