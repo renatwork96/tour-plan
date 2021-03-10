@@ -33,9 +33,10 @@
       font-size: 36px
       line-height: 45px
       text-transform: uppercase
+
 .subscribe
   position: relative
-  width: 355px
+  width: 350px
   height: 55px
   border-radius: 4px
   overflow: hidden
@@ -51,6 +52,14 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    &::-webkit-input-placeholder
+      color: $gray
+    &::-moz-placeholder
+      color: $gray
+    &:-moz-placeholder
+      color: $gray
+    &::-ms-input-placeholder
+      color: $gray
   &__button
     position: absolute
     min-width: 65px
