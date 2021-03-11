@@ -31,6 +31,48 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+  &-slider
+    width: 700px
+    &__item
+      width: 100%
+      height: 450px
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      &::after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
+
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 99
+      width: 30px
+      height: 30px
+      border: none
+      cursor: pointer
+      outline: none
+      background-color: transparent
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      &--next
+        right: 18px
+        background-image: url(../img/arrow-next.svg)
+        z-index: 10
+      &--prev
+        left: 18px
+        background-image: url(../img/arrow-prev.svg)
+        z-index: 10
 .stars
   flex-basis: 100%
 .offer
@@ -56,44 +98,7 @@
 .raiting-counter
   &__small-text
     font-size: 10px
-.swiper-container
-  width: 100%
-  height: 450px
-  position: relative
-  border-radius: 8px
-  &::after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    z-index: 10
-.slider
-  width: 700px
-  &-button
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    z-index: 99
-    width: 30px
-    height: 30px
-    border: none
-    cursor: pointer
-    outline: none
-    background-color: transparent
-    background-repeat: no-repeat
-    background-position: center
-    background-size: 10px
-  &__next
-    right: 18px
-    background-image: url(../img/arrow-next.svg)
-  &__prev
-    left: 18px
-    background-image: url(../img/arrow-prev.svg)
+
 .booking
   background: $dark
   color: $light
