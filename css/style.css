@@ -1165,8 +1165,8 @@ template {
        object-fit: cover;
   }
   .card {
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
   }
 }
 
