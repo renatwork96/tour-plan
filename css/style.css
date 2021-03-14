@@ -906,7 +906,7 @@ template {
 .subscribe__button {
   position: absolute;
   min-width: 65px;
-  max-width: 90px;
+  max-width: 65px;
   right: 0;
   top: 0;
   height: 100%;
@@ -1251,7 +1251,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 
@@ -1440,6 +1440,9 @@ template {
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
