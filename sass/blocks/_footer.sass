@@ -10,7 +10,7 @@
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
   &__logo
-    width: 166px
+    width: 160px
     grid-row: 1 / 3
     align-self: stretch
   &__categories
@@ -31,11 +31,22 @@
       grid-column: span 2
     &-form
       grid-column: span 2
+    &-tel
+      text-decoration: none
+      color: inherit
+      white-space: nowrap
+
   &__form
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__button
+    font-weight: bold
 
   &__ul
     padding: 0
@@ -60,7 +71,7 @@
     font-size: 14px
     line-height: 160%
     color: $footer-text-color
-    &--mb-20
+    &--mb-2
       margin-bottom: 20px
   &__icon
     &-wrapper
@@ -80,6 +91,14 @@
     height: 50px
     margin-bottom: 15px
     flex-basis: 48%
+    &::-webkit-input-placeholder
+      color: $gray
+    &::-moz-placeholder
+      color: $gray
+    &:-moz-placeholder
+      color: $gray
+    &::-ms-input-placeholder
+      color: $gray
   &__message
     background-color: $light
     border-radius: 4px
@@ -90,6 +109,14 @@
     margin-bottom: 23px
     height: 123px
     resize: none
+    &::-webkit-input-placeholder
+      color: $gray
+    &::-moz-placeholder
+      color: $gray
+    &:-moz-placeholder
+      color: $gray
+    &::-ms-input-placeholder
+      color: $gray
   &__button
     min-width: 160px
     max-width: 160px
@@ -111,16 +138,8 @@
     line-height: 15px
     color: $footer-info-color
     margin-bottom: 15px
+
   &__disclamer
-    margin-right: 15px
-    &--link
-      color: $light
-      text-decoration: none
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-  &__disclamer-wrapper
     display: flex
     align-self: center
     align-items: center
@@ -129,3 +148,17 @@
     grid-column: 2 / 4
     flex-wrap: nowrap
     flex-basis: 100%
+    &--link
+      color: $light
+      text-decoration: none
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-right: 15px
+  &__icons
+    width: 136px
+    height: 22px
+    grid-column: 4 / 5
+    align-self: center
+    justify-self: end

@@ -20,7 +20,7 @@
   .container, .newsletter-wrapper
     max-width: 700px
   .logo
-    width: 132px
+    width: 130px
   .navbar
     &-top
       padding-top: 30px
@@ -91,9 +91,11 @@
         grid-row: 4
         grid-column: span 5
     &__disclamer
-      &-wrapper
-        grid-column: span 4
-        justify-self: start
+      grid-column: span 4
+      justify-self: start
+    &__icons
+      grid-column: 5 / 7
+      justify-self: end
 
 @media ( max-width:  768px)
   .container
@@ -135,7 +137,6 @@
         &--mobile
           &--visible
             display: block
-
   .menu
     &-button
       width: 16px
@@ -221,6 +222,11 @@
     height: 255px
   .footer
     padding-top: 70px
+    padding-bottom: 20px
+    &__logo
+      width: 100px
+    &-wrapper
+      grid-row-gap: 30px
     &__input
       flex-basis: 100%
 
@@ -281,6 +287,14 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__disclamer
+      grid-row: 8
+      grid-column: 1
+      justify-self: start
+    &__icons
+      grid-row: 9
+      grid-column: 1
+      justify-self: start
 
 @media ( max-width: 480px) and ( min-width: 320px)
   .container
@@ -304,8 +318,16 @@
       &__text
         text-align: left
   .footer
+    &__logo,
+    &__social-links,
+    &__categories,
+    &__legal,
+    &__additional,
+    &__contact
+      margin-bottom: 20px
+
     &-wrapper
-      grid-row-gap: 30px
+      grid-row-gap: 0
     &__button
       order: 10
     &__info
@@ -324,5 +346,7 @@
     &__contact
       &-form
         min-width: 280px
+        margin-bottom: 20px
     &__disclamer
-      margin-right: 10px
+      &--wrapper
+        margin-right: 10px
