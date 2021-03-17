@@ -48,10 +48,18 @@
     padding-right: 75px
     background-color: #F5FAFE
     border: none
-    font-style: 12px
+    font-size: 12px
     line-height: 15px
     color: $text-color
     outline: none
+    &::-webkit-input-placeholder
+      color: $dark
+    &::-moz-placeholder
+      color: $dark
+    &:-moz-placeholder
+      color: $dark
+    &::-ms-input-placeholder
+      color: $dark
   &__button
     position: absolute
     top: 0

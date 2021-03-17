@@ -442,10 +442,26 @@ template {
   padding-right: 75px;
   background-color: #F5FAFE;
   border: none;
-  font-style: 12px;
+  font-size: 12px;
   line-height: 15px;
   color: #333333;
   outline: none;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #0A223D;
+}
+
+.search__input::-moz-placeholder {
+  color: #0A223D;
+}
+
+.search__input:-moz-placeholder {
+  color: #0A223D;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #0A223D;
 }
 
 .search__button {
@@ -1495,6 +1511,7 @@ template {
   .navbar-menu {
     padding-top: 22px;
     padding-bottom: 22px;
+    width: 100%;
   }
   .navbar-menu__link {
     font-style: 12px;
@@ -1586,6 +1603,7 @@ template {
     -ms-grid-row: 4;
     grid-row: 4;
     grid-column: span 5;
+    margin-bottom: 20px;
   }
   .footer__disclamer {
     grid-column: span 4;
@@ -1641,6 +1659,7 @@ template {
     bottom: 0;
     top: 78px;
     padding-top: 30px;
+    overflow: auto;
   }
   .navbar-bottom--visible {
     display: block;
@@ -1904,6 +1923,9 @@ template {
     padding-top: 28px;
     padding-bottom: 28px;
   }
+  .navbar-menu__item--mobile--visible {
+    width: 80%;
+  }
   .newsletter-title {
     font-size: 20px;
     line-height: 25px;
@@ -1954,7 +1976,11 @@ template {
     margin-bottom: 20px;
   }
   .footer__disclamer--wrapper {
-    margin-right: 10px;
+    margin-right: 5%;
+    white-space: nowrap;
+  }
+  .footer__disclamer--link {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
