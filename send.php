@@ -8,6 +8,7 @@ require 'phpmailer/Exception.php';
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
+$email = $_POST['email'];
 
 // Формирование самого письма
 $title = "Новое обращение Best Tour Plan";
@@ -18,13 +19,19 @@ $body = "
 <b>Сообщение:</b><br>$message
 ";
 
+$body2 = "
+<h2>Новое обращение</h2>
+<b>E-mail:</b> $email<br>
+";
+
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
+     
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    //$mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -41,7 +48,11 @@ try {
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    $mail->Body = $body;    
+    if (isset($_POST['name'])) {
+        $mail->Body = $body; 
+    } else if (isset($_POST['email'])) {  
+        $mail->Body = $body2;
+    }
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
