@@ -1,4 +1,6 @@
 .modal
+  &__form
+
   &__overlay
     position: fixed
     left: 0
@@ -52,6 +54,13 @@
     width: 100%
     min-height: 123px
     margin-bottom: 15px
+    resize: none
+  &__footer-wrapper
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
   &__button
     min-width: 160px
     max-width: 160px
@@ -66,9 +75,12 @@
     overflow: hidden
     white-space: nowrap
     text-overflow: ellipsis
+    margin-right: 10px
+    margin-bottom: 10px
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
     color: $footer-info-color
+    white-space: nowrap
