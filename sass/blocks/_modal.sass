@@ -1,6 +1,4 @@
 .modal
-  &__form
-
   &__overlay
     position: fixed
     left: 0
@@ -15,6 +13,7 @@
     &--visible
       visibility: visible
       opacity: 1
+      overflow: auto
   &__dialog
     position: fixed
     top: 50%
@@ -32,6 +31,9 @@
     &--visible
       visibility: visible
       opacity: 1
+      overflow: auto
+      max-height: 100%
+      overflow: auto
   &__close
     position: fixed
     right: 18px
@@ -50,11 +52,36 @@
   &__input
     width: 100%
     margin-bottom: 15px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    &::-webkit-input-placeholder
+      color: $gray
+    &::-moz-placeholder
+      color: $gray
+    &:-moz-placeholder
+      color: $gray
+    &::-ms-input-placeholder
+      color: $gray
   &__message
     width: 100%
     min-height: 123px
     margin-bottom: 15px
     resize: none
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    outline: none
+    &::-webkit-input-placeholder
+      color: $gray
+    &::-moz-placeholder
+      color: $gray
+    &:-moz-placeholder
+      color: $gray
+    &::-ms-input-placeholder
+      color: $gray
   &__footer-wrapper
     width: 100%
     display: flex
@@ -76,7 +103,6 @@
     white-space: nowrap
     text-overflow: ellipsis
     margin-right: 10px
-    margin-bottom: 10px
   &__info
     font-style: normal
     font-weight: bold
@@ -84,3 +110,4 @@
     line-height: 15px
     color: $footer-info-color
     white-space: nowrap
+    margin-bottom: 10px

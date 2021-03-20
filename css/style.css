@@ -1530,6 +1530,7 @@ template {
 .modal__overlay--visible {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
 }
 
 .modal__dialog {
@@ -1553,6 +1554,9 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  overflow: auto;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .modal__close {
@@ -1577,6 +1581,26 @@ template {
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.modal__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__input::-ms-input-placeholder {
+  color: #BDBDBD;
 }
 
 .modal__message {
@@ -1584,6 +1608,27 @@ template {
   min-height: 123px;
   margin-bottom: 15px;
   resize: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+}
+
+.modal__message::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message::-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message:-moz-placeholder {
+  color: #BDBDBD;
+}
+
+.modal__message::-ms-input-placeholder {
+  color: #BDBDBD;
 }
 
 .modal__footer-wrapper {
@@ -1616,7 +1661,6 @@ template {
   white-space: nowrap;
   text-overflow: ellipsis;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .modal__info {
@@ -1626,6 +1670,7 @@ template {
   line-height: 15px;
   color: #E0E0E0;
   white-space: nowrap;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -1982,6 +2027,9 @@ template {
     width: 100%;
     max-width: 100%;
     margin-right: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .modal__dialog {
     padding: 33px 60px;
