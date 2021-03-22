@@ -32,7 +32,7 @@
       visibility: visible
       opacity: 1
       overflow: auto
-      max-height: 100%
+      max-height: 97%
       overflow: auto
   &__close
     position: fixed
@@ -51,7 +51,7 @@
     text-align: center
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -67,7 +67,7 @@
   &__message
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-top: 15px
     resize: none
     font-style: normal
     font-weight: normal
@@ -83,6 +83,7 @@
     &::-ms-input-placeholder
       color: $gray
   &__footer-wrapper
+    margin-top: 15px
     width: 100%
     display: flex
     flex-wrap: wrap
@@ -111,3 +112,5 @@
     color: $footer-info-color
     white-space: nowrap
     margin-bottom: 10px
+.invalid
+  color: $primary

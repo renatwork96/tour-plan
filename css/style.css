@@ -1397,6 +1397,10 @@ template {
   outline: none;
   padding: 0 23px;
   height: 50px;
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1555,7 +1559,7 @@ template {
   visibility: visible;
   opacity: 1;
   overflow: auto;
-  max-height: 100%;
+  max-height: 97%;
   overflow: auto;
 }
 
@@ -1580,7 +1584,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1606,7 +1610,7 @@ template {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   resize: none;
   font-style: normal;
   font-weight: normal;
@@ -1632,6 +1636,7 @@ template {
 }
 
 .modal__footer-wrapper {
+  margin-top: 15px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1673,6 +1678,10 @@ template {
   margin-bottom: 10px;
 }
 
+.invalid {
+  color: #EC1F46;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 930px;
@@ -1690,7 +1699,7 @@ template {
     width: 220px;
     height: 220px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1765,9 +1774,9 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+  .footer__input-group {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2014,7 +2023,7 @@ template {
   .footer-wrapper {
     grid-row-gap: 30px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
