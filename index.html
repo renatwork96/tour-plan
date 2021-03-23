@@ -7,8 +7,8 @@
   <title>Best Tour Plan - Hotel Booking</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
   <header class="navbar navbar__mobile--fixed">
@@ -121,7 +121,7 @@
               <img src="img/Star.svg" alt="star">
             </div>
             <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
-            <span class="offer hotel-info__offer">Flash Offer</span>
+            <span class="offer hotel-info__offer" data-aos="zoom-in" data-aos-duration="1500">Flash Offer</span>
           </div>
           <p class="hotel-description hotel-info__description">Half-Board / All Inclusive + Complimentary Activities + Child Stays Free</p>
         </div>
@@ -214,12 +214,19 @@
   </section>
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title newsletter__title">
+      <h2 class="newsletter-title newsletter__title" data-aos="fade-right" data-aos-duration="1000">
         subscribe to our
-        <span class="newsletter-title__strong">Newsletter</span>
+        <span class="newsletter-title__strong" data-aos="fade-right" data-aos-duration="1000">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="email" class="subscribe__input" placeholder="Your email address" name="email">
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form" data-aos="fade-left" data-aos-duration="1000">
+        <div class="subscribe__wrapper">
+          <input 
+            type="email" 
+            class="subscribe__input" 
+            placeholder="Your email address" 
+            name="email" 
+            required
+        ></div>
         <button class="subscribe__button">
           <div class="subscribe__button-text">Send</div> 
         </button>
@@ -229,15 +236,15 @@
   </section>
   <section class="reviews">
     <div class="container">
-      <h2 class="reviews__title">
+      <h2 class="reviews__title" data-aos="fade-down" data-aos-duration="1000">
         What people think about us
       </h2>
       <div class="swiper-container reviews-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="reviews-slider__item">
+            <div class="reviews-slider__item" data-aos="zoom-in" data-aos-duration="1000">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-1.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar-1.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" data-aos="zoom-in" data-aos-duration="1500">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -250,7 +257,7 @@
                 <!-- /.reviews-slider__rating -->
               </div>
               <!-- /.review-slider__profile -->
-              <p class="reviews-slider__text">
+              <p class="reviews-slider__text" >
                 It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only
                 that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which
                 were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per
@@ -264,7 +271,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-2.jpg" alt="Photo: Kira Strong" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar-2.jpg" alt="Photo: Kira Strong" class="reviews-slider__avatar" data-aos="zoom-in" data-aos-duration="1000">
                 <h3 class="reviews-slider__username">Kira Strong</h3>
                 <span class="reviews-slider__date">Stayed 27 Oct, 2017</span>
                 <div class="reviews-slider__rating">
@@ -289,7 +296,7 @@
           <div class="swiper-slide">
             <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-3.jpg" alt="Photo: Victoriya Silver" class="reviews-slider__avatar">
+                <img src="img/reviews-avatar-3.jpg" alt="Photo: Victoriya Silver" class="reviews-slider__avatar" data-aos="zoom-in" data-aos-duration="1000">
                 <h3 class="reviews-slider__username">Victoriya Silver</h3>
                 <span class="reviews-slider__date">Stayed 12 Dec, 2018</span>
                 <div class="reviews-slider__rating">
@@ -324,29 +331,29 @@
   </section>
   <section class="activities">
     <div class="container">
-      <h2 class="activities__title">
+      <h2 class="activities__title" data-aos="fade-right" data-aos-duration="1000">
         Other Activities
       </h2>
       <div class="activities-wrapper">
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-right" data-aos-duration="1000">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of chamarel</h3>
           <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-right" data-aos-duration="1500">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title">Gymkhana club golf course</h3>
           <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-right" data-aos-duration="2000">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
           <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
         </div>
         <!-- /.card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-right" data-aos-duration="2500">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title">The blue marine discovery quest</h3>
           <button data-toggle="modal" data-href="#activities-modal" class="card__button">Book Now</button>
@@ -411,7 +418,7 @@
             </ul>
           </div>
           <!-- /.footer__list -->
-          <div class="footer__contact-details">
+          <div class="footer__contact-details" data-aos="zoom-in-right" data-aos-duration="1000">
             <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
             <ul class="footer__ul">
@@ -440,7 +447,7 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div class="footer__contact-form" data-aos="zoom-in-left" data-aos-duration="1000">
             <h3 class="footer__title" footer__title--mb-3>Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
@@ -460,6 +467,7 @@
                   placeholder="Phone Number*" 
                   name="phone"
                   required
+                  minlength="18"
                 >
               </div>
               <textarea 
@@ -491,7 +499,7 @@
   <div class="modal" id="booking-modal">
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
-    <div class="modal__dialog">
+    <div class="modal__dialog" >
       <a href="#" class="modal__close">
         <img src="img/close.svg" alt="icon: close">
       </a>
@@ -511,6 +519,7 @@
           placeholder="Phone Number*" 
           name="phone" 
           required
+          minlength="18"
         >
         <input 
           type="email" 
@@ -530,7 +539,7 @@
   </div>
   <!-- /.modal -->
 
-  <div class="modal" id="rating-modal">
+  <div class="modal" id="rating-modal" >
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
@@ -553,6 +562,7 @@
           placeholder="Phone Number*" 
           name="phone"
           required
+          minlength="18"
         >
         <input 
           type="email" 
@@ -574,7 +584,7 @@
   </div>
   <!-- /.modal -->
 
-  <div class="modal" id="activities-modal">
+  <div class="modal" id="activities-modal" >
     <div class="modal__overlay"></div>
     <!-- /.modal__overlay -->
     <div class="modal__dialog">
@@ -596,10 +606,12 @@
           placeholder="Phone Number*" 
           name="phone"
           required
+          minlength="18"
         >
         <input 
           type="email" 
-          class="input modal__input" placeholder="Email*" 
+          class="input modal__input" 
+          placeholder="Email*" 
           name="email"
           required
         >
@@ -622,6 +634,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

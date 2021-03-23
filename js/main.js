@@ -79,10 +79,11 @@ $(document).ready(function () {
         },
         phone: {
           required: "Please specify your phone number",
+          minlength: "The phone must be at least ten digits"
         },
       }
     });
   })
   $(".phone").mask("+7 (999) 999-99-99");
-
+  AOS.init();
 });
