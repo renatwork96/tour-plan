@@ -75,8 +75,7 @@
 
     &__button
       position: absolute
-      top: 50%
-      transform: translateY(-50%)
+      top: calc( 50% - 15px )
       z-index: 99
       width: 30px
       height: 30px
@@ -96,7 +95,14 @@
         background-image: url(../img/arrow-prev.svg)
         z-index: 10
 .stars
+  display: flex
   flex-basis: 100%
+  align-items: start
+  &__icon
+    width: 6px
+    height: 6px
+    margin-right: 4px
+
 .offer
   font-size: 10px
   line-height: 13px
@@ -217,6 +223,7 @@
 .map
   width: 347px
   height: 213px
-  background-color: #000
+  background-image: url(../img/map-bg.jpg)
+  background-position: center center
   border-radius: 10px
   overflow: hidden
