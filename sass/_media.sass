@@ -5,7 +5,7 @@
     &-slider
       width: 560px
   .hotel
-    &-slide
+    &-slider
       &__image
         width: 100%
         height: 100%
@@ -116,7 +116,7 @@
 
 @media ( max-width:  768px)
   .container
-    max-width: 576px
+    max-width: 700px
     width: 92%
 
   .navbar
@@ -155,18 +155,15 @@
     &-container
       height: 100%
   .hotel
-    &-right
-      flex-direction: column
-      min-height: 450px
     &-slider
-      height: 350px
+      height: 450px
       &__item
         height: 100%
+  .booking
+    width: 49%
+  .map
+    width: 49%
 
-    .booking
-      width: 100%
-    .map
-      width: 100%
   .newsletter
     &-wrapper
       flex-direction: column
@@ -205,9 +202,6 @@
       width: 100px
     &-wrapper
       grid-row-gap: 30px
-    &__input
-      &-group
-        flex-basis: 100%
   .modal
     &__footer-wrapper
       justify-content: flex-end
@@ -226,7 +220,7 @@
   body
     padding-top: 78px
   .navbar
-    &__mobile
+    &--mobile
       &--fixed
         position: fixed
         left: 0
@@ -285,6 +279,14 @@
     &__slider
       margin-bottom: 20px
       height: 250px
+    &-right
+      flex-direction: column
+      min-height: 450px
+  .booking
+    width: 100%
+  .map
+    width: 100%
+    background-image: url(../img/map-bg576.jpg)
 
   .newsletter
     padding: 76px 0 83px 0
@@ -335,6 +337,9 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__input
+      &-group
+        flex-basis: 100%
     &__disclamer
       grid-row: 8
       grid-column: 1
@@ -417,10 +422,10 @@
         min-width: 280px
         margin-bottom: 20px
     &__disclamer
-      &--wrapper
+      &-wrapper
         margin-right: 5%
         white-space: nowrap
-      &--link
+      &-link
         margin-right: 0
   .modal
     &__input

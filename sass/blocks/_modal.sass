@@ -38,9 +38,13 @@
     position: fixed
     right: 18px
     top: 17px
+    height: 16px
     text-decoration: none
     cursor: pointer
     outline: none
+    &:hover
+      outline: 1px solid $light
+      outline-offset: 2px
   &__title
     font-style: normal
     font-weight: bold
@@ -106,6 +110,17 @@
     white-space: nowrap
     text-overflow: ellipsis
     margin-right: 10px
+    &:hover
+      -o-transform: scale(1.1 , 1.1)
+      -ms-transform: scale(1.1 , 1.1)
+      -moz-transform: scale(1.1 , 1.1)
+      -webkit-transform: scale(1.1 , 1.1)
+      transform: scale(1.1 , 1.1)
+      -o-transition: all 0.3s ease-in-out
+      -moz-transition: all 0.3s ease-in-out
+      -webkit-transition: all 0.3s ease-in-out
+      transition: all 0.3s ease-in-out
+
   &__info
     font-style: normal
     font-weight: bold

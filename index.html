@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/aos.css">
 </head>
 <body>
-  <header class="navbar navbar__mobile--fixed">
+  <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="index.html" class="logo">
@@ -142,19 +142,19 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slide__image" src="img/slide.jpg" alt="slide">
+                <img class="hotel-slider__image" src="img/slide.jpg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slide__image" src="img/slide-2.jpg" alt="slide">
+                <img class="hotel-slider__image" src="img/slide-2.jpg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slide__image" src="img/slide-3.jpg" alt="slide">
+                <img class="hotel-slider__image" src="img/slide-3.jpg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slide__image" src="img/slide-4.jpg" alt="slide">
+                <img class="hotel-slider__image" src="img/slide-4.jpg" alt="slide">
               </div>
               <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slide__image" src="img/slide-5.jpg" alt="slide">
+                <img class="hotel-slider__image" src="img/slide-5.jpg" alt="slide">
               </div>
             </div>
           
@@ -238,12 +238,12 @@
       <h2 class="reviews__title" data-aos="fade-down" data-aos-duration="1000">
         What people think about us
       </h2>
-      <div class="swiper-container reviews-slider">
-        <div class="swiper-wrapper">
+      <div class="swiper-container reviews-slider"data-aos="zoom-in" data-aos-duration="1000">
+        <div class="swiper-wrapper" > 
           <div class="swiper-slide">
-            <div class="reviews-slider__item" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="reviews-slider__item">
               <div class="reviews-slider__profile">
-                <img src="img/reviews-avatar-1.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" data-aos="zoom-in" data-aos-duration="1500">
+                <img src="img/reviews-avatar-1.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
                 <h3 class="reviews-slider__username">Megan Fox</h3>
                 <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                 <div class="reviews-slider__rating">
@@ -400,9 +400,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://www.facebook.com/" target="_blank" class="footer__link"><img src="img/facebook.svg" alt="icon: facebook"></a>
-            <a href="https://www.youtube.com/" target="_blank" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-            <a href="https://www.instagram.com/" target="_blank" class="footer__link"><img src="img/instagram.svg" alt="icon: instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank" class="footer__link"><img src="img/facebook.svg" class="footer__social-icon" alt="icon: facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank" class="footer__link"><img src="img/youtube.svg" class="footer__social-icon" alt="icon: youtube"></a>
+            <a href="https://www.instagram.com/" target="_blank" class="footer__link"><img src="img/instagram.svg" class="footer__social-icon" alt="icon: instagram"></a>
           </div>
           <!-- /.footer__social-links -->
         </div>
@@ -483,9 +483,9 @@
           </div>
           <!-- /.footer__contact-form -->
           <div class="footer__disclamer">
-              <div class="footer__disclamer--wrapper"><a href="#" class="footer__disclamer--link">Disclaimer</a></div>
-              <div class="footer__disclamer--wrapper"><a href="#" class="footer__disclamer--link">Conditions of use</a></div>
-              <div class="footer__disclamer--wrapper"><a href="#" class="footer__disclamer--link">Cancellation policy</a></div>
+              <div class="footer__disclamer-wrapper"><a href="#" class="footer__disclamer-link">Disclaimer</a></div>
+              <div class="footer__disclamer-wrapper"><a href="#" class="footer__disclamer-link">Conditions of use</a></div>
+              <div class="footer__disclamer-wrapper"><a href="#" class="footer__disclamer-link">Cancellation policy</a></div>
           </div>
           <div class="footer__icons">
             <img src="img/footer-icons.png" alt="Icon: icons">
@@ -631,6 +631,7 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
