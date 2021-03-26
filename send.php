@@ -11,17 +11,25 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
+$title = "New appeal Best Tour Plan";
 $body = "
-<h2>Новое обращение</h2>
-<b>Имя:</b> $name<br>
-<b>Телефон:</b> $phone<br><br>
-<b>Сообщение:</b><br>$message
+<h2>New appeal</h2>
+<b>Name:</b> $name<br>
+<b>Phone number:</b> $phone<br>
+<b>E-mail:</b> $email<br><br>
+<b>Message:</b><br>$message
 ";
 
 $body2 = "
-<h2>Новое обращение</h2>
+<h2>New appeal</h2>
 <b>E-mail:</b> $email<br>
+";
+
+$body3 = "
+<h2>New appeal</h2>
+<b>Name:</b> $name<br>
+<b>Phone number:</b> $phone<br><br>
+<b>Message:</b><br>$message
 ";
 
 // Настройки PHPMailer
@@ -40,7 +48,7 @@ try {
     $mail->Password   = 'sIpwTZaY'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('renatbiz.mail@gmail.com', 'Хаков Ренат'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('renatbiz.mail@gmail.com', 'Khakov Renat'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('chakov_renat@mail.ru');
@@ -48,11 +56,13 @@ try {
     // Отправка сообщения
     $mail->isHTML(true);
     $mail->Subject = $title;
-    if (isset($_POST['name'])) {
+    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['phone'])) {
         $mail->Body = $body; 
     } else if (isset($_POST['email'])) {  
         $mail->Body = $body2;
-    }
+    } else if (isset($_POST['name']) && isset($_POST['phone'])) {  
+        $mail->Body = $body3;
+    } 
 
 // Проверяем отравленность сообщения
 if ($mail->send()) {$result = "success";} 
